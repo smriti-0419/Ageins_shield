@@ -32,7 +32,7 @@ jobs:
       - name: Install and build frontend
         working-directory: frontend
         run: |
-          npm install
+          npm install --legacy-peer-deps
           npm run build
         env:
           PUBLIC_URL: /Ageins_shield
