@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "AgeinsShield Fraud Alarm",
+  "version": "1.0.0",
+  "description": "Scores every website you open from 1-100 and sounds the alarm on fraud sites.",
+  "permissions": ["tabs", "storage", "scripting", "notifications"],
+  "host_permissions": ["<all_urls>"],
+  "background": { "service_worker": "background.js" },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "AgeinsShield",
+    "default_icon": { "16": "icons/icon16.png", "48": "icons/icon48.png", "128": "icons/icon128.png" }
+  },
+  "icons": { "16": "icons/icon16.png", "48": "icons/icon48.png", "128": "icons/icon128.png" }
+}

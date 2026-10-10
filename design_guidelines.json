@@ -1,0 +1,99 @@
+{
+  "project_name": "AgeinsShield Security Console",
+  "app_type": "saas_dashboard_security_console",
+  "design_archetype": "Archetype 2: The Performance Pro / Tactical SOC Minimalist",
+  "theme_mode": "dark_first_soc",
+  "brand_colors": {
+    "background_dark": "#070A12",
+    "surface_card": "#0F172A",
+    "surface_card_hover": "#1E293B",
+    "border_subtle": "#1E293B",
+    "border_accent": "#334155",
+    "text_primary": "#F8FAFC",
+    "text_secondary": "#94A3B8",
+    "text_muted": "#64748B",
+    "accent_cyan": "#06B6D4",
+    "accent_cyan_glow": "rgba(6, 182, 212, 0.2)",
+    "status_safe_emerald": "#10B981",
+    "status_warning_amber": "#F59E0B",
+    "status_danger_crimson": "#EF4444",
+    "alarm_glow": "rgba(239, 68, 68, 0.4)"
+  },
+  "typography": {
+    "font_family_heading": "'Outfit', 'Cabinet Grotesk', -apple-system, sans-serif",
+    "font_family_body": "'DM Sans', 'Plus Jakarta Sans', sans-serif",
+    "font_family_code": "'JetBrains Mono', 'Fira Code', monospace",
+    "heading_scale": {
+      "h1_hero": "text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-100",
+      "h2_section": "text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-slate-100",
+      "h3_card": "text-xl sm:text-2xl font-semibold text-slate-100",
+      "subtitle": "text-base sm:text-lg text-slate-400 font-normal leading-relaxed"
+    }
+  },
+  "visual_enhancers": {
+    "glassmorphism": "backdrop-blur-xl bg-slate-900/80 border border-slate-800/80 shadow-2xl",
+    "card_style": "bg-slate-900/90 border border-slate-800 rounded-xl p-6 transition-all duration-200 hover:border-slate-700",
+    "tactical_border": "border border-slate-800/90 shadow-[0_0_15px_rgba(0,0,0,0.5)]",
+    "alarm_alert_banner": "animate-pulse bg-red-950/80 border-2 border-red-500/80 text-red-200 rounded-xl p-4 shadow-[0_0_30px_rgba(239,68,68,0.3)] flex items-center justify-between"
+  },
+  "key_features_ui_specs": {
+    "url_fraud_scanner": {
+      "security_meter_gauge": "Circular SVG meter (1-100 scale) with dynamic needle/gradient arc. Score 80-100 = Emerald Safe, 50-79 = Amber Moderate Risk, 1-49 = Crimson Threat.",
+      "alarm_system": "Includes visual flashing red perimeter overlay + optional HTML5 Web Audio synth siren toggle when threat score < 50 or fraud site detected.",
+      "quick_presets": "Provide instant test URL buttons: 'Suspicious Phishing Bank', 'Malicious Crypto Drainer', 'Legitimate Enterprise Site'."
+    },
+    "ai_content_detector": {
+      "text_analysis": "Text area input with word/character counter, sample loader buttons (Human Essay vs AI Generated Article).",
+      "metrics_breakdown": "% AI Likelihood Gauge, Perplexity index, Burstiness score, and highlighted sentences colored by AI confidence."
+    },
+    "phishing_email_detector": {
+      "email_input": "Raw email header + body text parser with pre-loaded scam samples (Fake CEO Wire Transfer, Suspicious Account Suspension, Genuine Receipt).",
+      "red_flags": "List of flagged anomalies: Deceptive Domain, High Urgency Keywords, Missing SPF/DKIM, Suspicious Links."
+    },
+    "chatbot_widget": {
+      "floating_bubble": "Bottom-right glowing shield button with pulse ping status. Opens interactive security assistant chat.",
+      "capabilities": "Rule-based assistant capable of analyzing URLs directly in chat, providing phishing advice, and offering security tips."
+    },
+    "embed_code_generator": {
+      "snippet_box": "Syntax-highlighted script tag copy block with one-click 'Copy Snippet' button and instant Sonner toast notification.",
+      "interactive_preview": "Live interactive iframe/sandbox container demonstrating how the embedded chatbot works on external websites."
+    },
+    "scan_history": "Filterable and searchable data table with scan type badges, risk scores, status indicators, and view analysis detail modal."
+  },
+  "image_urls": {
+    "hero_background": "https://images.unsplash.com/photo-1549605659-32d82da3a059?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwxfHxjeWJlcnNlY3VyaXR5JTIwZGlnaXRhbCUyMG5ldHdvcmslMjBzaGllbGQlMjBkYXJrfGVufDB8fHx8MTc5MTM2MzI1MHww&ixlib=rb-4.1.0&q=85",
+    "cyber_grid_overlay": "https://images.unsplash.com/photo-1715700447180-198af6f183a1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHw0fHxjeWJlcnNlY3VyaXR5JTIwZGlnaXRhbCUyMG5ldHdvcmslMjBzaGllbGQlMjBkYXJrfGVufDB8fHx8MTc5MTM2MzI1MHww&ixlib=rb-4.1.0&q=85",
+    "matrix_screen": "https://images.unsplash.com/photo-1595928796398-1d0ac507eed0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwyfHxjeWJlcnNlY3VyaXR5JTIwZGlnaXRhbCUyMG5ldHdvcmslMjBzaGllbGQlMjBkYXJrfGVufDB8fHx8MTc5MTM2MzI1MHww&ixlib=rb-4.1.0&q=85"
+  },
+  "testing_attributes": {
+    "rule": "All key buttons, inputs, tabs, gauges, and alerts MUST include explicit data-testid attributes.",
+    "examples": [
+      "data-testid='nav-login-btn'",
+      "data-testid='url-scan-input'",
+      "data-testid='url-scan-submit-btn'",
+      "data-testid='security-gauge-meter'",
+      "data-testid='alarm-alert-banner'",
+      "data-testid='alarm-sound-toggle'",
+      "data-testid='ai-content-input'",
+      "data-testid='ai-content-analyze-btn'",
+      "data-testid='phishing-email-input'",
+      "data-testid='phishing-analyze-btn'",
+      "data-testid='embed-code-snippet'",
+      "data-testid='copy-embed-btn'",
+      "data-testid='chatbot-trigger-btn'",
+      "data-testid='chatbot-input'",
+      "data-testid='scan-history-table'"
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Use dark-first tactical aesthetics with slate backgrounds (#070A12) and emerald/amber/crimson risk accents.",
+    "Ensure all interactive components have high contrast hover/active states.",
+    "Implement the alarm system with visual red flashing border and optional Web Audio synth siren sound when high fraud risk is detected.",
+    "Ensure copy snippet functionality provides feedback via Sonner toast notification.",
+    "Make sure the embedded script snippet preview page has an interactive live preview simulator.",
+    "Ensure standard JS React structure (.js / .jsx files as specified).",
+    "Add explicit data-testid attributes to all form controls, buttons, scanners, meters, and chat elements."
+  ]
+},
+overwrite:true,
+path:
