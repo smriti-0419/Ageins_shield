@@ -36,6 +36,7 @@ jobs:
           npm run build
         env:
           PUBLIC_URL: /Ageins_shield
+          REACT_APP_BACKEND_URL: https://ageins-shield.onrender.com
 
       - name: Upload site
         uses: actions/upload-pages-artifact@v4
